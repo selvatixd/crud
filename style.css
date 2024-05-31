@@ -1,0 +1,133 @@
+/* Reset básico para os estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos da tabela */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Estilos dos formulários */
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="submit"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Estilos dos botões */
+button, input[type="submit"], a.button {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Cor de fundo verde */
+    color: white; /* Texto branco */
+    border: none;
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.2s; /* Transição suave para hover */
+    text-decoration: none; /* Remover sublinhado de links */
+    display: inline-block;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra leve para profundidade */
+}
+
+button:hover, input[type="submit"]:hover, a.button:hover {
+    background-color: #45a049; /* Cor mais clara no hover */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Sombra mais profunda para efeito 3D no hover */
+}
+
+button:active, input[type="submit"]:active, a.button:active {
+    background-color: #3e8e41; /* Cor mais escura quando o botão é clicado */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Sombra reduzida no clique */
+    transform: translateY(2px); /* Efeito de pressionar o botão */
+}
+
+/* Links estilizados como botões */
+a.button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+a.button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para mensagens de erro e sucesso */
+.error, .success {
+    padding: 10px;
+    border-radius: 5px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.error {
+    background-color: #dc3545;
+}
+
+.success {
+    background-color: #28a745;
+}
