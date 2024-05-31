@@ -1,14 +1,14 @@
 <?php
 include 'database.php';
 
-// Obter o ID do usuário a ser excluído
+// VERIFICAÇÃO
 $id = $_GET['id'] ?? '';
 if (!$id) {
     echo "Usuário não encontrado.";
     return;
 }
 
-// Preparar SQL e deletar usuário
+// CONSULTAR
 $qquery = $database->prepare("DELETE FROM usuarios WHERE id = :id");
 $qquery->bindParam(':id', $id);
 if ($qquery->execute()) {

@@ -2,15 +2,13 @@
 include 'database.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($_POST)) {
-    // Validar entrada
     $nome = $_POST['nome_completo'] ?? '';
     $email = $_POST['email'] ?? '';
     $senha = $_POST['senha'] ?? '';
 
-    // Criptografar senha
     $senha_hash = password_hash($senha, PASSWORD_DEFAULT);
 
-    // Preparar SQL e inserir dados
+// CONSULTAR SQL
     $qquery = $database->prepare("INSERT INTO usuarios (nome_completo, email, senha) VALUES (:nome, :email, :senha)");
     $qquery->bindParam(':nome', $nome);
     $qquery->bindParam(':email', $email);
@@ -24,6 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($_POST)) {
 
 ?>
 <link rel="stylesheet" type="text/css" href="style.css">
+<h2>Cadastrar Usuário</h2>
 <form method="post">
     Nome Completo: <input type="text" name="nome_completo" required><br>
     Email: <input type="email" name="email" required><br>

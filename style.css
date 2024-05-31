@@ -1,4 +1,4 @@
-/* Reset básico para os estilos */
+
 * {
     margin: 0;
     padding: 0;
@@ -25,7 +25,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Estilos da tabela */
+
 table {
     width: 100%;
     margin-top: 20px;
@@ -48,7 +48,7 @@ tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
-/* Estilos dos formulários */
+
 form {
     background-color: #ffffff;
     padding: 20px;
@@ -75,33 +75,31 @@ select {
     border: 1px solid #ddd;
 }
 
-/* Estilos dos botões */
+
 button, input[type="submit"], a.button {
     font-size: 16px;
     padding: 10px 20px;
-    background-color: #4CAF50; /* Cor de fundo verde */
-    color: white; /* Texto branco */
+    background-color: #4CAF50;
+    color: white;
     border: none;
-    border-radius: 5px; /* Bordas arredondadas */
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s, box-shadow 0.2s; /* Transição suave para hover */
-    text-decoration: none; /* Remover sublinhado de links */
-    display: inline-block;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra leve para profundidade */
+    transition: background-color 0.3s, box-shadow 0.2s;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 button:hover, input[type="submit"]:hover, a.button:hover {
-    background-color: #45a049; /* Cor mais clara no hover */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Sombra mais profunda para efeito 3D no hover */
+    background-color: #45a049;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
 button:active, input[type="submit"]:active, a.button:active {
-    background-color: #3e8e41; /* Cor mais escura quando o botão é clicado */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Sombra reduzida no clique */
-    transform: translateY(2px); /* Efeito de pressionar o botão */
+    background-color: #3e8e41;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transform: translateY(2px);
 }
 
-/* Links estilizados como botões */
 a.button {
     padding: 10px 15px;
     background-color: #007bff;
@@ -116,7 +114,6 @@ a.button:hover {
     background-color: #0056b3;
 }
 
-/* Estilos para mensagens de erro e sucesso */
 .error, .success {
     padding: 10px;
     border-radius: 5px;

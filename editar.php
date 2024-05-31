@@ -21,15 +21,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($_POST)) {
         echo "Erro ao editar usuário.";
     }
 }
-
-// Obter o ID do usuário a ser editado
+// ID
 $id = $_GET['id'] ?? '';
 if (!$id) {
     echo "Usuário não encontrado.";
     return;
 }
 
-// Consultar dados do usuário
+// CONSULTAR
 $qquery = $database->prepare("SELECT * FROM usuarios WHERE id = :id");
 $qquery->bindParam(':id', $id);
 $qquery->execute();
@@ -41,6 +40,7 @@ if (!$usuario) {
 }
 ?>
 <link rel="stylesheet" type="text/css" href="style.css">
+<h2>Editar Usuário</h2>
 <form method="post">
     <input type="hidden" name="id" value="<?php echo $usuario['id']; ?>">
     Nome Completo: <input type="text" name="nome_completo" value="<?php echo $usuario['nome_completo']; ?>" required><br>
