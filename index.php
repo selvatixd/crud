@@ -3,8 +3,13 @@ include 'database.php';
 $qquery = $database->query("SELECT id, nome_completo, email FROM usuarios");
 $usuarios = $qquery->fetchAll(PDO::FETCH_ASSOC);
 ?>
-<link rel="stylesheet" type="text/css" href="style.css">
-<h2>Lista de Usuários</h2>
+<link rel="stylesheet" type="text/css" href="style.css?v=1">
+<body>
+<div class="container">
+    <h2>Lista de Usuários</h2>
+</div>
+</body>
+
 <table>
     <thead>
     <tr>

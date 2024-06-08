@@ -21,8 +21,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($_POST)) {
 }
 
 ?>
-<link rel="stylesheet" type="text/css" href="style.css">
-<h2>Cadastrar Usuário</h2>
+<link rel="stylesheet" type="text/css" href="style.css?v=1">
+
+<body>
+<div class="container">
+    <h2>Cadastrar Usuário</h2>
+</div>
+</body>
 <form method="post">
     Nome Completo: <input type="text" name="nome_completo" required><br>
     Email: <input type="email" name="email" required><br>

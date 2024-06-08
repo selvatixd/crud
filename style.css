@@ -14,18 +14,30 @@ body {
 }
 
 .container {
-    width: 80%;
-    margin: 0 auto;
-    overflow: auto;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    padding: -10px; /* Adiciona um pouco de espaço em torno */
+    width: 100%; /* Ajusta a largura para a largura total da tela */
+    /* Remove a altura mínima se não necessário */
 }
 
 h2 {
-    color: #333;
-    text-align: center;
-    margin-bottom: 20px;
+    background: linear-gradient(135deg, #6b6c73, #625d5d); /* Gradiente suave de azul claro para rosa pastel */
+    color: #ffffff; /* Cor de texto mais suave que preto puro */
+    padding: 10px 20px;
+    border-radius: 15px; /* Bordas mais arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil para profundidade */
+    display: inline-block;
+    margin: 20px; /* Mantém uma margem para evitar colagem nas bordas */
+    text-align: center; /* Centraliza o texto dentro do h2 */
+    transition: all 0.3s ease; /* Transição suave para qualquer mudança */
 }
 
-
+h2:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px); /* Efeito sutil ao passar o mouse */
+}
 table {
     width: 100%;
     margin-top: 20px;
@@ -53,7 +65,7 @@ form {
     background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.38);
     margin-top: 20px;
 }
 
@@ -128,3 +140,4 @@ a.button:hover {
 .success {
     background-color: #28a745;
 }
+

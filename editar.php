@@ -39,8 +39,12 @@ if (!$usuario) {
     return;
 }
 ?>
-<link rel="stylesheet" type="text/css" href="style.css">
-<h2>Editar Usuário</h2>
+<link rel="stylesheet" type="text/css" href="style.css?v=1">
+<body>
+<div class="container">
+    <h2>Editar Usuário</h2>
+</div>
+</body>
 <form method="post">
     <input type="hidden" name="id" value="<?php echo $usuario['id']; ?>">
     Nome Completo: <input type="text" name="nome_completo" value="<?php echo $usuario['nome_completo']; ?>" required><br>
