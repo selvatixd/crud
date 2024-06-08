@@ -23,8 +23,8 @@ body {
 }
 
 h2 {
-    background: linear-gradient(135deg, #6b6c73, #625d5d); /* Gradiente suave de azul claro para rosa pastel */
-    color: #ffffff; /* Cor de texto mais suave que preto puro */
+    background: linear-gradient(135deg, rgb(255, 255, 255), rgb(255, 255, 255)); /* Gradiente suave de azul claro para rosa pastel */
+    color: rgba(87, 87, 87, 0.88); /* Cor de texto mais suave que preto puro */
     padding: 10px 20px;
     border-radius: 15px; /* Bordas mais arredondadas */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil para profundidade */
